@@ -34,7 +34,7 @@
       "offerPrice" : "₹425.00",
       "price" : 399.00,
       "stock": "In stock",
-      "off" : "10% off",
+      "off" : "10%off",
       "brand" :  "Vlcc"
     },
 
@@ -45,7 +45,7 @@
       "offerPrice" : "₹430.00",
       "price" : 387.00,
       "stock": "In stock",
-      "off" : "12% off",
+      "off" : "12%off",
       "brand" :  "Vlcc"
     },
 
@@ -55,7 +55,7 @@
       "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/u/n/untitled-3_2.jpg",
       "price" : "1,040.00" ,
       "offerPrice"  : "₹1,033.00",
-      "off" : "8% off",
+      "off" : "8%off",
       "stock": "In stock",
       "brand" :  "Vlcc"
     },
@@ -66,7 +66,7 @@
       "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/u/n/untitled-1_1_3.jpg",
       "price" : 469.00,
       "offerPrice" : 570.00,
-      "off" : "19% off",
+      "off" : "19%off",
       "stock": "In stock",
       "brand" :  "Vlcc"
     },
@@ -88,7 +88,7 @@
       "offerPrice" : "499.00",
       "stock": "In stock",
       "brand" : "Vlcc",
-      "off" : "10% off"
+      "off" : "10%off"
     },
 
     {
@@ -99,7 +99,7 @@
       "offerPrice" : "825.00",
       "stock": "In stock",
       "brand" : "Vlcc",
-      "off" : "8% off"
+      "off" : "8%off"
     },
 
     {
@@ -110,7 +110,7 @@
       "offerPrice" : "825.00",
       "stock": "In stock",
       "brand" : "Vega",
-      "off" : "10% off"
+      "off" : "10%off"
     },
 
     {
@@ -121,7 +121,7 @@
       "offerPrice" : "999.00",
       "stock": "In stock",
       "brand" : "Vega",
-      "off" : "10% off"
+      "off" : "10%off"
     },
 
     {
@@ -132,7 +132,7 @@
       "offerPrice" : "1,299.00",
       "stock": "In stock",
       "brand" : "Vega",
-      "off" : "7% off"
+      "off" : "7%off"
     },
 
     {
@@ -143,7 +143,7 @@
       "offerPrice" : "599.00",
       "stock": "In stock",
       "brand" : "Vlcc",
-      "off" : "10% off"
+      "off" : "10%off"
     },
 
     {
@@ -154,7 +154,7 @@
       "offerPrice" : "525.00",
       "stock": "In stock",
       "brand" : "Plum",
-      "off" : "13% off"
+      "off" : "13%off"
     },
 
     {
@@ -165,18 +165,279 @@
       "offerPrice" : "499.00",
       "stock": "In stock",
       "brand" : "Vlcc",
-      "off" : "10% off"
+      "off" : "10%off"
     }
 
   ],
-  "comments": [
+  "MakeUpTab": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "title": "VEGA Contour Blender Brush (PB-01)",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/b/c/bc5725a8904086310317_1.jpg",
+      "price" : 743.00,
+      "offerPrice" : "825.00",
+      "stock": "In stock",
+      "brand" : "Vega",
+      "off" : "10%off"
+    },
+
+    {
+      "id": 2,
+      "title": "VEGA Powder Brush Small (MBP-09)",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/3/1/311225a8904086310782_0.jpg",
+      "price" : 765.00,
+      "offerPrice" : "850.00",
+      "stock": "In stock",
+      "brand" : "Vega",
+      "off" : "10%off"
+    },
+
+    {
+      "id": 3,
+      "title": "Plum Eye-Swear-By Brow Definer - Umber Brown",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/4/3/435c288cces030bdub3171_7.jpg",
+      "price" : 383.00,
+      "offerPrice" : "450.00",
+      "stock": "In stock",
+      "brand" : "Plum",
+      "off" : "15%off"
+    },
+
+    {
+      "id": 4,
+      "title": "Plum Eye-Swear-By Brow Definer - Ash",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/9/d/9d69288cces030bdab3188_7.jpg",
+      "price" : 450.00,
+      "stock": "In stock",
+      "brand" : "Plum"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "HairTab": [
+    {
+      "id": 1,
+      "title": "Shahnaz Husain Hair Touch-Up Plus - Brown",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/8/c/8c2e07e205000000436877.jpg",
+      "price" : 302.00,
+      "offerPrice" : "335.00",
+      "stock": "In stock",
+      "brand" : "Shahnaz",
+      "off" : "10%off"
+    },
+
+    {
+      "id": 2,
+      "title": "Indulekha Bringha Hair Strengthening Serum",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/3/23e539226478_s1-8901030897436.jpg",
+      "price" : 718.00,
+      "offerPrice" : "756.00",
+      "stock": "In stock",
+      "brand" : "Induleka",
+      "off" : "5%off"
+    },
+
+    {
+      "id": 3,
+      "title": "Head & Shoulders Cool Menthol 2-In-1 Anti-Dandruff Shampoo + Conditioner",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/3/23e539226478_s1-8901030897436.jpg",
+      "price" : 805.00,
+      "offerPrice" : "875.00",
+      "stock": "In stock",
+      "brand" : "Head & Shoulder",
+      "off" : "8%off"
+    },
+
+    {
+      "id": 4,
+      "title": "Head & Shoulders 2-In-1 Anti-Hairfall Anti-Dandruff Shampoo ",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/6/b/6b028414987176112545.jpg",
+      "price" : 338.00,
+      "offerPrice" : "375.00",
+      "stock": "In stock",
+      "brand" : "Head & Shoulder",
+      "off" : "10%off"
+    }
+  ],
+
+  "MomAndBabyCareTab" : [
+    {
+      "id": 1,
+      "title": "Himalaya Gentle Baby Shampoo",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/u/n/untitled-46.jpg",
+      "price" : 320.00,
+      "stock": "In stock",
+      "brand" : "Himalaya"
+    },
+
+    {
+      "id": 2,
+      "title": "Cetaphil Baby Massage Oil With Shea Butter",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/6/b/6b028414987176112545.jpg",
+      "price" : 599.00,
+      "offerPrice" : "630.00",
+      "stock": "In stock",
+      "brand" : "Cetaphil",
+      "off" : "5%off"
+    },
+
+    {
+      "id": 3,
+      "title": "Mamaearth Foaming Face Wash For Kids With Aloe Vera & Coconut For Gentle",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/d/b/dbcab848906087778264_7.jpg",
+      "price" : 349.00,
+      "stock": "In stock",
+      "brand" : "MamaEarth"
+    },
+
+    {
+      "id": 4,
+      "title": "Mamaearth Coco Soft Massage Oil For New Born With Coconut & Turmeric Oil",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/o/coco-oil.jpg",
+      "price" : 339.00,
+      "offerPrice" : "399.00",
+      "stock": "In stock",
+      "brand" : "MamaEarth",
+      "off" : "15%off"
+    } 
+  ],
+
+  "FragranceTab" : [
+    {
+      "id": 1,
+      "title": "Plum Bodylovin' Feelin' So Rose Body Mist",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/5/5/55c1d29plumx00000130_5_1.jpg",
+      "price" : 457.00,
+      "offerPrice" : "525.00",
+      "stock": "In stock",
+      "brand" : "Plum",
+      "off" : "10%off"
+    },
+
+    {
+      "id": 2,
+      "title": "Plum Bodylovin' Orchid You Not Body Mist",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/5/5/55c1d29plumx00000130_5_1.jpg",
+      "price" : 473.00,
+      "offerPrice" : "525.00",
+      "stock": "In stock",
+      "brand" : "Plum",
+      "off" : "10%off"
+    },
+
+    {
+      "id": 3,
+      "title": "Plum Bodylovin' Trippin' Mimosas Body Mist",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/8/1/8123211plumx00000053_1.jpg",
+      "price" : 473.00,
+      "offerPrice" : "525.00",
+      "stock": "In stock",
+      "brand" : "Plum",
+      "off" : "10%off"
+    },
+
+    {
+      "id": 4,
+      "title": "Mamaearth Eau De Parfum For A Fragrance As Unique As You",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/9/f/9fd2fca8906087777243__1_.jpg",
+      "price" : 629.00,
+      "offerPrice" : "699.00",
+      "stock": "In stock",
+      "brand" : "MamaEarth",
+      "off" : "10%off"
+    }
+  ],
+
+  "LatestProducts" : [
+    {
+      "id": 1,
+      "title": "Head & Shoulders Cool Menthol Anti-Dandruff Shampoo",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/a/2ae55ce4902430871464.jpg",
+      "price" : 300.00,
+      "offerPrice" : "315.00",
+      "stock": "In stock",
+      "brand" : "Head & Shoulder",
+      "off" : "5%off" 
+    },
+
+    {
+      "id": 2,
+      "title": "Indulekha Bringha Hair Strengthening Lepam",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/8/c/8c9c39226479_s1-8901030897429.jpg",
+      "price" : 603.00,
+      "offerPrice" : "648.00",
+      "stock": "In stock",
+      "brand" : "Induleka",
+      "off" : "7%off" 
+    },
+
+    {
+      "id": 3,
+      "title": "Shahnaz Husain Pearl Cream White Naturally Rehydrant Moisturizer",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/a/7/a7fa1af205000000436857.jpg",
+      "price" : "1,088.00",
+      "offerPrice" : "1,145.00",
+      "stock": "In stock",
+      "brand" : "Shahnaz",
+      "off" : "5%off" 
+    }
+  ], 
+
+  "BestSellers" : [
+    {
+      "id": 1,
+      "title": "Ponds Super Light Gel Oil Free Moisturiser",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/p/o/ponds_super_light_gel_oil_free_moisturiser_with_hyaluronic_acid_vitamin_e2.jpg",
+      "price" : "₹ 299.00",
+      "stock": "In stock",
+      "brand" : "Ponds"
+    },
+
+    {
+      "id": 2,
+      "title": "Blue Heaven Candy Matte Lip Color",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/u/n/untitled-140.jpg",
+      "out_of_stock": "Out of stock",
+      "brand" : "Blue Heaven"
+    },
+
+    {
+      "id": 3,
+      "title": "Ponds Pimple Clear Face Wash Pack Of 2",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/u/n/untitled-93.jpg",
+      "price" :  "₹498.00",
+      "out_of_stock": "Out of stock",
+      "brand" : "Ponds"
+    }
+  ],
+
+  "MostViewed" : [
+    {
+      "id": 1,
+      "title": "O3+ Whitening Facial Kit With Brightening & Whitening Peel Off Mask",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/o/5/o5_1_1.jpg",
+      "price" : 499.00,
+      "offerPrice" : "₹ 510.00",
+      "stock": "In stock",
+      "brand" : "O3+",
+      "off" : "2%off" 
+    },
+
+    
+    {
+      "id": 2,
+      "title": "Ponds White Beauty Anti Spot Fairness Day Cream SPF 15 PA++",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/u/n/untitled-93.jpg",
+      "price" : 240.00,
+      "stock": "In Stock",
+      "brand" : "Ponds"
+    },
+
+    {
+      "id": 3,
+      "title": "Vaseline Body Lotion 400ml + Pond's Moisturising Cold Cream 55ml Free",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/g/v/gvhjgvyjhv.jpg",
+      "price" : 310.00,
+      "stock": "In Stock",
+      "brand" : "Vasaline"
+    }
+  ]
 }

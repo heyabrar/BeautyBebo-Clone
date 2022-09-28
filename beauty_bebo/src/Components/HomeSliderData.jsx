@@ -1,9 +1,10 @@
-import { Box, Image, Text, Grid, Button} from "@chakra-ui/react";
+import { Box, Image, Text, Grid, Button, Tooltip} from "@chakra-ui/react";
 import { useEffect } from "react";
 import { useState } from "react"
 import { FetchHomeSlideData } from "../FetchAPI/Fetch";
 import {Link, useSearchParams} from 'react-router-dom'
 import Pagination from "./Pagination";
+import { BsCartCheck } from "react-icons/bs";
 
 const getCurrentPage = (value)=>{
     value = Number(value)
@@ -50,9 +51,11 @@ export default function HomeSliderData ( ) {
                            <Text fontSize={{base : '12px', md : '12px', lg : '16px'}} className='SliderDataPrice'>{'₹' + elem.price}</Text>
                            <Text fontSize={{base : '12px', md : '12px', lg : '16px'}} className='SliderDataOff'>{elem.off}</Text>
                           </Box>
+                          <Tooltip label="Add To Cart" aria-label='A tooltip'>
                             <Box  w={{base : '150px', md : '150px'}} m='auto'>  
-                                <Button bg={'#dd0285'} width='80px' size='sm' color='white' className="AddToCartBtn" variant={'solid'}>Add</Button>
+                                <Button bg='#dd0285' size='sm' colorScheme='none' fontSize='20px' className="AddToCartBtn"><BsCartCheck/></Button>
                             </Box>
+                         </Tooltip>
                         </Box>
                         </Link>   
                     )
