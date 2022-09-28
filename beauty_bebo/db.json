@@ -1,0 +1,182 @@
+{
+  "homeSlidderData1": [
+    {
+      "id": 1,
+      "title": "Ponds Bright Beauty Foaming Brush Facewash For Glowing Skin",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/d/8/d85648627520_s1-8901030881978.jpg",
+      "price" : 399.00,
+      "stock": "In stock",
+      "brand" :  "Ponds"
+    },
+
+    {
+      "id": 2,
+      "title": "VLCC Youth Boost Body Lotion SPF 25| PA+++",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/8/9/8907122011513.jpg",
+      "price" : 399.00,
+      "stock": "In stock",
+      "brand" :  "Vlcc"
+    },
+
+    {
+      "id": 3,
+      "title": "VLCC Active Fruits Damage Repair Body Lotion SPF 30|PA+++",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/1/2/1282f498907122011544_1.jpg",
+      "price" : 399.00,
+      "stock": "In stock",
+      "brand" :  "Vlcc"
+    },
+
+    {
+      "id": 4,
+      "title": "VLCC Onion & Fenugreek Shampoo (300ml)",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/4/f4342d68907122014712_1.jpg",
+      "offerPrice" : "₹425.00",
+      "price" : 399.00,
+      "stock": "In stock",
+      "off" : "10% off",
+      "brand" :  "Vlcc"
+    },
+
+    {
+      "id": 5,
+      "title": "VLCC Pro Radiance Brightening Day Cream",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/6/d/6dad4738907122014651_3.jpg",
+      "offerPrice" : "₹430.00",
+      "price" : 387.00,
+      "stock": "In stock",
+      "off" : "12% off",
+      "brand" :  "Vlcc"
+    },
+
+    {
+      "id": 6,
+      "title": "VLCC Pearl Facial Kit + FREE Rose Water Toner Worth Rs 170",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/u/n/untitled-3_2.jpg",
+      "price" : "1,040.00" ,
+      "offerPrice"  : "₹1,033.00",
+      "off" : "8% off",
+      "stock": "In stock",
+      "brand" :  "Vlcc"
+    },
+
+    {
+      "id": 8,
+      "title": "VLCC Water Resistant SPF60 Sun Screen Gel Crème",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/u/n/untitled-1_1_3.jpg",
+      "price" : 469.00,
+      "offerPrice" : 570.00,
+      "off" : "19% off",
+      "stock": "In stock",
+      "brand" :  "Vlcc"
+    },
+
+    {
+      "id": 9,
+      "title": "VLCC Silver Facial Kit Purifies & Detoxifies For Healthy Skin",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/u/n/untitled-2_2.jpg",
+      "price" : 300.00,
+      "stock": "In stock",
+      "brand" : "Vlcc"
+    },
+
+    {
+      "id": 10,
+      "title": "VLCC Eternal Youth Skin Firming Under Eye Gel",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/7/1/71300aa8907122015290_1.jpg",
+      "price" : 300.00,
+      "offerPrice" : "499.00",
+      "stock": "In stock",
+      "brand" : "Vlcc",
+      "off" : "10% off"
+    },
+
+    {
+      "id": 11,
+      "title": "VLCC Eternal Youth Skin Firming Day Cream SPF 15",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/8/c88e0aa8907122015269_1.jpg",
+      "price" : 743.00,
+      "offerPrice" : "825.00",
+      "stock": "In stock",
+      "brand" : "Vlcc",
+      "off" : "8% off"
+    },
+
+    {
+      "id": 12,
+      "title": "VEGA Contour Blender Brush (PB-01)",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/b/c/bc5725a8904086310317_1.jpg",
+      "price" : 743.00,
+      "offerPrice" : "825.00",
+      "stock": "In stock",
+      "brand" : "Vega",
+      "off" : "10% off"
+    },
+
+    {
+      "id": 13,
+      "title": "VEGA Hot Curl Brush - Large (H1-PRL)",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/8/c/8c4225a8904086320842_2.jpg",
+      "price" : 899.00,
+      "offerPrice" : "999.00",
+      "stock": "In stock",
+      "brand" : "Vega",
+      "off" : "10% off"
+    },
+
+    {
+      "id": 14,
+      "title": "VEGA K-Shine Hair Straightener(VHSH-28)",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/d/3/d39a25avegax00000027_1.jpg",
+      "price" : "1,208.00",
+      "offerPrice" : "1,299.00",
+      "stock": "In stock",
+      "brand" : "Vega",
+      "off" : "7% off"
+    },
+
+    {
+      "id": 15,
+      "title": "VLCC Natural Sciences Mineral Sunscreen Tinted SPF 50 UVB PA+++ UVA",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/f/5/f56d5fe8907122015818_1.jpg",
+      "price" : "539.00",
+      "offerPrice" : "599.00",
+      "stock": "In stock",
+      "brand" : "Vlcc",
+      "off" : "10% off"
+    },
+
+    {
+      "id": 16,
+      "title": "Plum Bodylovin' Lychee Cuddle Body Yogurt",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/d/1/d133d29plumx00000129_1.jpg",
+      "price" : "457.00",
+      "offerPrice" : "525.00",
+      "stock": "In stock",
+      "brand" : "Plum",
+      "off" : "13% off"
+    },
+
+    {
+      "id": 17,
+      "title": "VLCC Eternal Youth Skin Firming Under Eye Gel",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/7/1/71300aa8907122015290_1.jpg",
+      "price" : 300.00,
+      "offerPrice" : "499.00",
+      "stock": "In stock",
+      "brand" : "Vlcc",
+      "off" : "10% off"
+    }
+
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

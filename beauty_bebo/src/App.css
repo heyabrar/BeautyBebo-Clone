@@ -1,0 +1,85 @@
+.NavMainDiv{
+  position: fixed;
+  z-index: 99;
+}
+
+.DummyDiv{
+  border: 5px solid red;
+  height: 200px;
+}
+
+.MiddleNavFlex{
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;  
+  background-color: white;
+}
+
+.BottomNavContainer{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #dd0285;
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.slideshow {
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 20px  ;
+}
+
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 900ms;
+}
+
+.slide {
+  display: inline-block;
+  width: 100%;
+}
+
+
+.SliderSimpleGrid{
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 20px;
+}
+
+.Price_Offer_Div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.SliderDataofferPrice{
+  text-decoration: line-through;
+  color: gray;
+  font-weight: 550;
+}
+
+.SliderDataPrice{
+  font-weight: 700;
+  color: #dd0285;
+}
+
+.SliderDataOff{
+  color: green;
+  font-weight: 550;
+}
+
+.AddToCartBtn{
+  margin-top: 10px;
+}
+
+.PaginationContainer{
+  display: flex;
+  margin-top: 2%;
+  justify-content: space-between;
+}
+
+.PaginationButtons{
+  height: 10px;
+}
