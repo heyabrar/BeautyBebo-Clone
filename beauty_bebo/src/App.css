@@ -1,6 +1,8 @@
 .NavMainDiv{
   position: fixed;
   z-index: 99;
+  width: 100%;
+  margin: auto;
 }
 
 .DummyDiv{
@@ -8,8 +10,12 @@
   height: 200px;
 }
 
+.TopNav{
+  background-color: white;
+}
+
 .MiddleNavFlex{
-  margin: auto;
+  /* margin: auto; */
   justify-content: space-between;
   align-items: center;  
   background-color: white;
@@ -22,6 +28,7 @@
   color: white;
   font-weight: 600;
   padding: 10px;
+  /* margin: auto; */
 }
 
 .slideshow {
@@ -72,6 +79,8 @@
 
 .AddToCartBtn{
   margin-top: 10px;
+  color: white;
+  width: 60px;
 }
 
 .PaginationContainer{
@@ -80,6 +89,23 @@
   justify-content: space-between;
 }
 
-.PaginationButtons{
-  height: 10px;
+.ThirtyPercentBannerSimpleGrid{
+  margin: auto;
+  margin-top: 4%;
+  row-gap: 20px;
+}
+
+.HomeTablist{
+  border: 1px solid blue;
+}
+
+.FooterSimpleGrid{
+  background-color: black;
+  color: white;
+  margin: auto;
+}
+
+.FooterMainBox{
+  background-color: black;
+  padding-bottom: 20px;
 }
