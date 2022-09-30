@@ -735,7 +735,169 @@
       "brand" : "Chicco",
       "off" : "10%off"
     }
+  ],
 
+  "Fragrance" : [
+    {
+      "id": 1,
+      "title": "Denver Hamilton Imperial Perfume",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/d/2/d26.png",
+      "price" : "₹257.00 ",
+      "offerPrice" : "₹299.00",
+      "stock": "In stock",
+      "brand" : "Denver",
+      "off" : "14%off"
+    },
 
+    {
+      "id": 2,
+      "title": "Denver Insight Eau De Perfume",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/d/3/d30.jpg",
+      "price" : "₹499.00 ",
+      "offerPrice" : "₹448.00",
+      "out_of_stock": "Out of stock",
+      "brand" : "Denver",
+      "off" : "10%off"
+    },
+
+    {
+      "id": 3,
+      "title": "Fogg Scent Xtremo Men Fragrance Body Spray",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo6.jpg",
+      "price" : "₹599.00 ",
+      "offerPrice" : "₹539.00",
+      "out_of_stock": "Out of stock",
+      "brand" : "Fogg",
+      "off" : "10%off"
+    },
+
+    {
+      "id": 4,
+      "title": "Mamaearth Eau De Parfum For A Fragrance As Unique As You",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/9/f/9fd2fca8906087777243__1_.jpg",
+      "price" : "₹629.00 ",
+      "offerPrice" : "₹699.00",
+      "stock": "In stock",
+      "brand" : "MamaEarth",
+      "off" : "10%off"
+    },
+
+    {
+      "id": 5,
+      "title": "Plum Bodylovin' Orchid You Not Body Mist",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/6/266b211plumx00000054_1.jpg",
+      "price" : "₹473.00 ",
+      "offerPrice" : "₹525.00",
+      "stock": "In stock",
+      "brand" : "Plum",
+      "off" : "10%off"
+    },
+
+    {
+      "id": 6,
+      "title": "Calvin Klein Eternity For Men Eau De Parfum",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/s/8/s8.jpg",
+      "price" : "₹3,650.00 ",
+      "offerPrice" : "₹3,468.00",
+      "out_of_stock": "Out of stock",
+      "brand" : "Calvin Klein",
+      "off" : "5%off"
+    },
+
+    {
+      "id": 7,
+      "title": "Kamasutra Hard Deodorant Spray For Men  ",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/s/f/sfdsdfsfd.jpg",
+      "price" : "₹189.00 ",
+      "offerPrice" : "₹210.00",
+      "out_of_stock": "Out of stock",
+      "brand" : "Kamasutra",
+      "off" : "10%off"
+    },
+
+    {
+      "id": 8,
+      "title": "Kamasutra Urge Deodorant Spray For Men - Pack Of 2",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/u/n/untitled-207.jpg",
+      "price" : "₹378.00 ",
+      "offerPrice" : "₹420.00",
+      "stock": "In stock",
+      "brand" : "Kamasutra",
+      "off" : "10%off"
+    },
+
+    {
+      "id": 9,
+      "title": "NIVEA Deodorant Fresh Comfort And Fresh Flower",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/n/i/nivea.png",
+      "price" : "₹338.00 ",
+      "offerPrice" : "₹398.00",
+      "stock": "In stock",
+      "brand" : "Nivea",
+      "off" : "10%off"
+    },
+    {
+      "id": 10,
+      "title": "Plum Bodylovin' Feelin' So Rose Body Mist",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/5/5/55c1d29plumx00000130_5_1.jpg",
+      "price" : "₹457.00",
+      "offerPrice" : "₹525.00",
+      "stock": "In stock",
+      "brand" : "Plum",
+      "off" : "10%off"
+    },
+
+    {
+      "id": 11,
+      "title": "Fogg Force Fragrance Body Spray",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo20.jpg",
+      "price" : "₹473.00",
+      "stock": "In stock",
+      "brand" : "Fogg"
+    },
+
+    {
+      "id": 12,
+      "title": "Plum Bodylovin' Trippin' Mimosas Body Mist",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/8/1/8123211plumx00000053_1.jpg",
+      "price" : "₹473.00",
+      "offerPrice" : "₹525.00",
+      "stock": "In stock",
+      "brand" : "Plum",
+      "off" : "10%off"
+    },
+
+    {
+      "id": 13,
+      "title": "Mamaearth Eau De Parfum For A Fragrance As Unique As You",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/9/f/9fd2fca8906087777243__1_.jpg",
+      "price" : "₹629.00",
+      "offerPrice" : "₹699.00",
+      "stock": "In stock",
+      "brand" : "MamaEarth",
+      "off" : "10%off"
+    },
+
+    {
+      "id": 14,
+      "title": "Adidas Ice Dive Eau De Toilette",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/1/0/1017320-3d6af.jpg",
+      "price" : "₹71  9.00",
+      "offerPrice" : "₹799.00",
+      "stock": "In stock",
+      "brand" : "Adidas",
+      "off" : "10%off"
+    },
+
+    {
+      "id": 15,
+      "title": "Calvin Klein Eternity Aqua For Women Eau De Parfum",
+      "image": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/a/q/aqua-for-women-eau-de-parfum.jpg",
+      "price" : "₹5,350.00 ",
+      "offerPrice" : "₹5,082.00",
+      "out_of_stock": "Out of stock",
+      "brand" : "Kamasutra",
+      "off" : "5%off"
+    }
   ]
 }

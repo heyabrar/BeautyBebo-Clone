@@ -1,13 +1,17 @@
-import { Box, Button, Image, SimpleGrid, Text, Tooltip } from "@chakra-ui/react";
+import { Box, Button, Image, SimpleGrid, Text, Tooltip, useToast } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { useState } from "react"
 import { Link } from "react-router-dom";
 import { FetchMakeUpTab } from "../FetchAPI/Fetch";
-import {BsCartCheck} from 'react-icons/bs'
+import {BsCartCheck} from 'react-icons/bs';
+import { useContext } from "react";
+import { CartContext } from "../Context/CartContext";
 
 export default function MakeUpTab ( ){
 
     const [MakeUpData,SetMakeUpData] = useState([ ]);
+    const {CartData,SetCartData} = useContext(CartContext);
+    const Toaster = useToast( );
 
     const handleMakeUpData = ( ) =>{
         FetchMakeUpTab( ).then((res)=>{
@@ -18,6 +22,11 @@ export default function MakeUpTab ( ){
     useEffect(( )=>{
         handleMakeUpData( );
     },[ ]);
+
+    const handleAddToCart = (elem) =>{
+        SetCartData([...CartData,elem]);
+        Toaster({title : 'Added To Cart' , position : 'top-center', duration : 2000});
+    }
     return (
         <>
         <SimpleGrid columns={[2,2,4]}>
@@ -35,7 +44,7 @@ export default function MakeUpTab ( ){
                      
                       <Tooltip label="Add To Cart" aria-label='A tooltip'>
                          <Box  w={{base : '150px', md : '150px'}} m='auto'>  
-                           <Button bg='#dd0285' size='sm' colorScheme='none' fontSize='20px' className="AddToCartBtn"><BsCartCheck/></Button>
+                           <Button onClick={( ) => handleAddToCart(elem)} bg='#dd0285' size='sm' colorScheme='none' fontSize='20px' className="AddToCartBtn"><BsCartCheck/></Button>
                          </Box>
                         </Tooltip>
                    </Box>

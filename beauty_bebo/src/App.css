@@ -119,4 +119,6 @@
 .HairPageSimpleGridBox{
   margin: auto;
   padding: 15px;
+  text-align: center;
+  font-weight: 550;
 }
