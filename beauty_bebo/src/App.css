@@ -15,7 +15,7 @@
 }
 
 .MiddleNavFlex{
-  /* margin: auto; */
+  margin: auto;
   justify-content: space-between;
   align-items: center;  
   background-color: white;

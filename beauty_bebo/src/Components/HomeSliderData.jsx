@@ -1,4 +1,4 @@
-import { Box, Image, Text, Grid, Button, Tooltip, useToast} from "@chakra-ui/react";
+import { Box, Image, Text, Grid, Button, Tooltip, useToast, Spinner} from "@chakra-ui/react";
 import { useContext, useEffect } from "react";
 import { useState } from "react"
 import { FetchHomeSlideData } from "../FetchAPI/Fetch";
@@ -6,6 +6,9 @@ import {Link, useParams, useSearchParams} from 'react-router-dom'
 import Pagination from "./Pagination";
 import { BsCartCheck } from "react-icons/bs";
 import { CartContext } from "../Context/CartContext";
+import Skeleton from "./Skeleton";
+import SkeletonCompo from "./Skeleton";
+import SpinnerLoader from "./SpinnerLoader";
 
 const getCurrentPage = (value)=>{
     value = Number(value)
@@ -25,11 +28,14 @@ export default function HomeSliderData ( ) {
     const [page,setPage] = useState(initialPage);
     const [totalPage,setTotalPage] = useState(0);
     const {CartData,SetCartData} = useContext(CartContext);
+    const [Loading,SetLoading] = useState(false);
     const Toaster = useToast()
 
     const handleHomeSliderData = ( ) =>{
+        SetLoading(true)
       FetchHomeSlideData(page,setTotalPage).then((res)=>{
         setSliderData(res)
+        SetLoading(false)
       })
     }
 
@@ -47,7 +53,11 @@ export default function HomeSliderData ( ) {
     }
     return (
         <>
-            <Grid templateColumns={{base : 'repeat(2,1fr)', md : 'repeat(4,1fr)'}} templateRows='repeat(1,1fr)'  className='SliderSimpleGrid' w={{base : '100%', md : '90%', lg :'85%'}} >
+        {/* <SkeletonCompo/>  */}
+            <Box  width='30%' m='auto' display='flex' justifyContent={'center'} position='relative' top={{base : '280px', md : '200px', lg : '250px'}}>
+              {Loading && <SpinnerLoader/>}
+            </Box>
+            <Grid  templateColumns={{base : 'repeat(2,1fr)', md : 'repeat(4,1fr)'}} templateRows='repeat(1,1fr)'  className='SliderSimpleGrid' w={{base : '100%', md : '90%', lg :'85%'}} >
                 {sliderData.map((elem)=> {
                     return(
                             <Box key={elem.id}  h={{base : '250px', md : '260px' , lg  :'380px'}} w='90%' m='auto' gap='10px'  textAlign={'center'}>
@@ -56,10 +66,10 @@ export default function HomeSliderData ( ) {
 
                             <Box className="Price_Offer_Div"> 
                                 <Text fontSize={{base : '10px', md : '10px', lg : '12px'}} className='SliderDataofferPrice'>{elem.offerPrice}</Text>
-                                <Text fontSize={{base : '12px', md : '12px', lg : '16px'}} className='SliderDataPrice'>{elem.price}</Text>
+                                <Text fontSize={{base : '12px', md : '12px', lg : '16px'}} className='SliderDataPrice'>{elem.rupee+elem.price}</Text>
                                 <Text fontSize={{base : '12px', md : '12px', lg : '16px'}} className='SliderDataOff'>{elem.off}</Text>
-                            </Box>
-
+                            </Box> 
+                    
                             <Tooltip label="Add To Cart" aria-label='A tooltip'>
                                 <Box  w={{base : '150px', md : '150px'}} m='auto'>  
                                     <Button onClick={( ) =>handleAddToCart (elem)} bg='#dd0285' size='sm' colorScheme='none' fontSize='20px' className="AddToCartBtn"><BsCartCheck/></Button>
