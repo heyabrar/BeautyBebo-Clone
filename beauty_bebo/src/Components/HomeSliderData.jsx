@@ -1,10 +1,11 @@
-import { Box, Image, Text, Grid, Button, Tooltip} from "@chakra-ui/react";
-import { useEffect } from "react";
+import { Box, Image, Text, Grid, Button, Tooltip, useToast} from "@chakra-ui/react";
+import { useContext, useEffect } from "react";
 import { useState } from "react"
 import { FetchHomeSlideData } from "../FetchAPI/Fetch";
 import {Link, useParams, useSearchParams} from 'react-router-dom'
 import Pagination from "./Pagination";
 import { BsCartCheck } from "react-icons/bs";
+import { CartContext } from "../Context/CartContext";
 
 const getCurrentPage = (value)=>{
     value = Number(value)
@@ -23,6 +24,8 @@ export default function HomeSliderData ( ) {
     const initialPage = getCurrentPage(searchParams.get('page'))
     const [page,setPage] = useState(initialPage);
     const [totalPage,setTotalPage] = useState(0);
+    const {CartData,SetCartData} = useContext(CartContext);
+    const Toaster = useToast()
 
     const handleHomeSliderData = ( ) =>{
       FetchHomeSlideData(page,setTotalPage).then((res)=>{
@@ -36,7 +39,12 @@ export default function HomeSliderData ( ) {
 
     useEffect(( )=>{
         setSearchParams({page})
-    },[page])
+    },[page]);
+
+    const handleAddToCart = (elem) =>{
+        SetCartData([...CartData,elem]);
+        Toaster({title : 'Added To Cart' , position : 'top-center', duration : 2000})
+    }
     return (
         <>
             <Grid templateColumns={{base : 'repeat(2,1fr)', md : 'repeat(4,1fr)'}} templateRows='repeat(1,1fr)'  className='SliderSimpleGrid' w={{base : '100%', md : '90%', lg :'85%'}} >
@@ -54,7 +62,7 @@ export default function HomeSliderData ( ) {
 
                             <Tooltip label="Add To Cart" aria-label='A tooltip'>
                                 <Box  w={{base : '150px', md : '150px'}} m='auto'>  
-                                    <Button bg='#dd0285' size='sm' colorScheme='none' fontSize='20px' className="AddToCartBtn"><BsCartCheck/></Button>
+                                    <Button onClick={( ) =>handleAddToCart (elem)} bg='#dd0285' size='sm' colorScheme='none' fontSize='20px' className="AddToCartBtn"><BsCartCheck/></Button>
                                 </Box>
                             </Tooltip>
                             </Box>

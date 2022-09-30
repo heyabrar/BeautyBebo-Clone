@@ -1,5 +1,6 @@
 import {Box, Flex, Image, Input} from '@chakra-ui/react'
-import {FaSearch,FaHeart,FaUserAlt} from 'react-icons/fa'
+import {FaSearch,FaUserAlt} from 'react-icons/fa'
+import {BsCartCheck} from 'react-icons/bs'
 import {Link} from 'react-router-dom'
 export default function Navbar ( ){
     return (
@@ -17,13 +18,13 @@ export default function Navbar ( ){
 
                 <Box display='flex' gap='10px' w={{base : '50%', md : '50%' , lg : '55%'}} alignItems='center'>
                     <Input placeholder='Search' h={{base : '25px', md : '40px'}} fontSize={{base : '10px', md : '14px'}}/>
-                <Box className='searchBtn' p={{base : '1px', md :'5px'}}><FaSearch/></Box>
+                <Box className='searchBtn' p={{base : '1px', md :'5px'}} _hover={{color : '#dd2985', cursor : 'pointer'}}><FaSearch/></Box>
                 </Box>
 
                 <Box display='flex' gap={{base : '15px', md : '15px' , lg : '20px'}} alignItems={'center'} justifyContent='center'  w={{base : '18%', md : '20%' , lg : '10%'}}>
-                    <Box fontSize={{base : '14px', md : '16px', lg : '25px'}}><FaHeart/></Box>
+                   <Link to='/cart'> <Box fontSize={{base : '14px', md : '16px', lg : '25px'}} _hover={{color : '#dd2985'}}><BsCartCheck/></Box></Link>
                         <Box display='flex' gap='10px' alignItems='center'>
-                        <Box fontSize={{base : '14px', md : '16px', lg : '25px'}}><FaUserAlt/></Box>
+                        <Box fontSize={{base : '14px', md : '16px', lg : '25px'}} _hover={{color : '#dd2985', cursor : 'pointer'}}><FaUserAlt/></Box>
                         </Box>
                 </Box>
             </Flex>

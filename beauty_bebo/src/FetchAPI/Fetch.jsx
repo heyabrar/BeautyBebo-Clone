@@ -82,3 +82,11 @@ export const FetchMomAndBabyCarePageData = ( ) =>{
 export const FetchSPMomAndBabyCarePageData = (id) =>{
     return axios(`http://localhost:3000/MomAndBabyCare/${id}`)
 }
+
+export const FetchFragrancePageData = ( ) =>{
+    return axios('http://localhost:3000/Fragrance')
+}
+
+export const FetchSPFragranceData = (id) =>{
+    return axios(`http://localhost:3000/Fragrance/${id}`)
+}

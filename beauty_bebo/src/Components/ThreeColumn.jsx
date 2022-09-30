@@ -1,6 +1,6 @@
 import { Box, SimpleGrid, Text } from "@chakra-ui/react";
 import BestSellers from "./BestSellers";
-import LatestProduct from "./LastesProductsCompo";
+import LatestProduct from "./LatestProductsCompo";
 import MostViewed from "./MostViewed";
 
 export default function ThressColumn ( ){
