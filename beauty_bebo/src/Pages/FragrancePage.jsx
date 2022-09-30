@@ -1,23 +1,33 @@
-import { Box, Button, Flex, Image, SimpleGrid, Text, Tooltip } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, SimpleGrid, Text, Tooltip, useToast } from "@chakra-ui/react";
 import { useEffect } from "react";
+import { useContext } from "react";
 import { useState } from "react"
 import { BsCartCheck } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { CartContext } from "../Context/CartContext";
 import { FetchFragrancePageData } from "../FetchAPI/Fetch";
 
 export default function FragrancePage ( ){
 
     const [FragranceData,SetFragranceData] = useState([ ]);
+    const {CartData,SetCartData} = useContext(CartContext);
+    const Toaster = useToast( );
 
     const handleFragranceData = ( ) =>{
         FetchFragrancePageData( ).then((res)=>{
             SetFragranceData(res.data)
-        })
-    }
+        });
+    };
 
     useEffect(( )=>{
         handleFragranceData( );
     },[ ]);
+
+    const handleAddToCart = (elem)=>{
+        SetCartData([...CartData,elem]);
+        Toaster({title : 'Added To Cart' , position : 'top-center', duration : 2000});
+    };
+
     return (
         <>
          <Box h={{base : '83px', md : '125px', lg : '180px'}}></Box>
@@ -31,13 +41,13 @@ export default function FragrancePage ( ){
                         
                         <Flex gap='10px' fontSize={{base : '12px',md : '14px'}} mt='10px' justifyContent='center'>
                             <Text color='gray' textDecoration='line-through'>{elem.offerPrice}</Text>
-                            <Text color='#dd2985' >{elem.price}</Text>
+                            <Text color='#dd2985' >{elem.rupee+elem.price}</Text>
                             <Text color='green'>{elem.off}</Text>
                         </Flex>
 
                         <Tooltip label="Add To Cart" aria-label='A tooltip'>
                                 <Box  w={{base : '150px', md : '150px'}} m='auto'>  
-                                    <Button bg='#dd0285' size='sm' colorScheme='none' fontSize='20px' disabled={elem.out_of_stock === 'Out of stock'} className="AddToCartBtn"><BsCartCheck/></Button>
+                                    <Button onClick={( ) => handleAddToCart(elem)} bg='#dd0285' size='sm' colorScheme='none' fontSize='20px' disabled={elem.out_of_stock === 'Out of stock'} className="AddToCartBtn"><BsCartCheck/></Button>
                                 </Box>
                             </Tooltip>
                      </Box>

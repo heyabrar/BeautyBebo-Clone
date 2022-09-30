@@ -1,32 +1,41 @@
-import {Box, Flex, Image, Input} from '@chakra-ui/react'
+import {Box, Flex, Image, Input, Text, Tooltip} from '@chakra-ui/react'
 import {FaSearch,FaUserAlt} from 'react-icons/fa'
 import {BsCartCheck} from 'react-icons/bs'
 import {Link} from 'react-router-dom'
+import { useContext } from 'react'
+import { CartContext } from '../Context/CartContext'
+import { useState } from 'react'
+import SkeletonCompo from './Skeleton'
 export default function Navbar ( ){
+    const {TotalCartPrice,SetTotalCartPrice} = useContext(CartContext);
+    const {Loading,SetLoading} = useState(true)
     return (
         <>
         <div className='NavMainDiv'>
         <Box maxW='100%'  className='TopNav'>
-            <Image boxSize='100%' m='auto' src='https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg'/>
+            <Link to={'/fragrance'}><Image boxSize='100%' m='auto' src='https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg'/></Link>
         </Box>
 
         <Box bg='white'>
             <Flex className='MiddleNavFlex' w={{base : '100%', md : '90%', lg : '90%'}} p='10px' bg='white'> 
-            <Box  w={{base : '20%', md : '20%', lg : '20%'}}>
-                <Image w={{base : '100%', md : '90%' , lg : '90%'}}  src='https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png'/>
+           <Box  w={{base : '20%', md : '20%', lg : '20%'}}>
+                <Link to='/'><Image w={{base : '100%', md : '90%' , lg : '90%'}}  src='https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png'/></Link>
             </Box>
+          
 
                 <Box display='flex' gap='10px' w={{base : '50%', md : '50%' , lg : '55%'}} alignItems='center'>
                     <Input placeholder='Search' h={{base : '25px', md : '40px'}} fontSize={{base : '10px', md : '14px'}}/>
                 <Box className='searchBtn' p={{base : '1px', md :'5px'}} _hover={{color : '#dd2985', cursor : 'pointer'}}><FaSearch/></Box>
                 </Box>
 
-                <Box display='flex' gap={{base : '15px', md : '15px' , lg : '20px'}} alignItems={'center'} justifyContent='center'  w={{base : '18%', md : '20%' , lg : '10%'}}>
-                   <Link to='/cart'> <Box fontSize={{base : '14px', md : '16px', lg : '25px'}} _hover={{color : '#dd2985'}}><BsCartCheck/></Box></Link>
-                        <Box display='flex' gap='10px' alignItems='center'>
-                        <Box fontSize={{base : '14px', md : '16px', lg : '25px'}} _hover={{color : '#dd2985', cursor : 'pointer'}}><FaUserAlt/></Box>
-                        </Box>
-                </Box>
+                <Flex  gap={{base : '15px', md : '15px' , lg : '20px'}} alignItems={'center'} justifyContent='center'  w={{base : '18%', md : '20%' , lg : '15%'}}>
+                   <Link to='/cart' > <Tooltip label='Cart'><Box  fontSize={{base : '14px', md : '16px', lg : '25px'}} _hover={{color : '#dd2985'}}><BsCartCheck/></Box></Tooltip></Link>
+                    <Tooltip label='Total In Cart'>
+                    <Text fontSize={{base :'12px', md : '14px' }}>{'₹'+TotalCartPrice}</Text>
+                     </Tooltip>
+                    <Box  fontSize={{base : '14px', md : '16px', lg : '25px'}} _hover={{color : '#dd2985', cursor : 'pointer'}}><FaUserAlt/></Box>
+                        
+                </Flex>
             </Flex>
         </Box>
 

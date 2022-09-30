@@ -1,6 +1,6 @@
 import axios from 'axios'
 export const FetchHomeSlideData = (page=1,setTotalPage ) =>{
-    return fetch(`http://localhost:3000/homeSlidderData1?_page=${page}&_limit=4`)
+    return fetch(`https://beautybebodbjson.onrender.com/homeSlidderData1?_page=${page}&_limit=4`)
     .then((res)=>{
         setTotalPage(Number(res.headers.get('X-Total-Count')))
         return res.json( );
@@ -8,85 +8,85 @@ export const FetchHomeSlideData = (page=1,setTotalPage ) =>{
 }
 
 export const FetchMakeUpTab = ( ) =>{
-    return axios(`http://localhost:3000/MakeUpTab`)
+    return axios(`https://beautybebodbjson.onrender.com/MakeUpTab`)
 }
 
 export const FetchHairTab = ( ) =>{
-    return axios(`http://localhost:3000/HairTab`)
+    return axios(`https://beautybebodbjson.onrender.com/HairTab`)
 }
 
 export const FetchMomAndBabyTab = ( ) =>{
-    return axios(`http://localhost:3000/MomAndBabyCareTab`)
+    return axios(`https://beautybebodbjson.onrender.com/MomAndBabyCareTab`)
 }
 
 export const FetchFragranceTab = ( ) =>{
-    return axios(`http://localhost:3000/FragranceTab`)
+    return axios(`https://beautybebodbjson.onrender.com/FragranceTab`)
 }
 
 export const FetchLatestProducts = ( ) =>{
-    return axios(`http://localhost:3000/LatestProducts`)
+    return axios(`https://beautybebodbjson.onrender.com/LatestProducts`)
 }
 
 export const FetchBestSellers = ( ) =>{
-    return axios(`http://localhost:3000/BestSellers`)
+    return axios(`https://beautybebodbjson.onrender.com/BestSellers`)
 }
 
 export const FetchMostViewed = ( ) =>{
-    return axios(`http://localhost:3000/MostViewed`)
+    return axios(`https://beautybebodbjson.onrender.com/MostViewed`)
 }
 
 export const FetchSinglePageHomeSlider = (id) =>{
-    return axios(`http://localhost:3000/homeSlidderData1/${id}`)
+    return axios(`https://beautybebodbjson.onrender.com/homeSlidderData1/${id}`)
 }
 
 export const FetchSinglePageMakeUpTab = (id) =>{
-    return axios(`http://localhost:3000/MakeUpTab/${id}`)
+    return axios(`https://beautybebodbjson.onrender.com/MakeUpTab/${id}`)
 }
 
 export const FetchSinglePageHairTab = (id) =>{
-    return axios(`http://localhost:3000/HairTab/${id}`)
+    return axios(`https://beautybebodbjson.onrender.com/HairTab/${id}`)
 }
 
 export const FetchSinglePageMomAndBabyCareTab = (id) =>{
-    return axios(`http://localhost:3000/MomAndBabyCareTab/${id}`)
+    return axios(`https://beautybebodbjson.onrender.com/MomAndBabyCareTab/${id}`)
 }
 
 export const FetchSinglePageFragranceTab = (id) =>{
-    return axios(`http://localhost:3000/FragranceTab/${id}`)
+    return axios(`https://beautybebodbjson.onrender.com/FragranceTab/${id}`)
 }
 
 export const FetchSinglePageBestSellers = (id) =>{
-    return axios(`http://localhost:3000/BestSellers/${id}`)
+    return axios(`https://beautybebodbjson.onrender.com/BestSellers/${id}`)
 }
 
 export const FetchSinglePageLatestProducts = (id) =>{
-    return axios(`http://localhost:3000/LatestProducts/${id}`)
+    return axios(`https://beautybebodbjson.onrender.com/LatestProducts/${id}`)
 }
 
 export const FetchSinglePageMostViewed = (id) =>{
-    return axios(`http://localhost:3000/MostViewed/${id}`)
+    return axios(`https://beautybebodbjson.onrender.com/MostViewed/${id}`)
 }
 
 export const FetchHairPageData = ( ) =>{
-    return axios(`http://localhost:3000/Hair`)
+    return axios(`https://beautybebodbjson.onrender.com/Hair`)
 }
 
 export const FetchSPHairPageData = (id) =>{
-    return axios(`http://localhost:3000/Hair/${id}`)
+    return axios(`https://beautybebodbjson.onrender.com/Hair/${id}`)
 }
 
 export const FetchMomAndBabyCarePageData = ( ) =>{
-    return axios(`http://localhost:3000/MomAndBabyCare`)
+    return axios(`https://beautybebodbjson.onrender.com/MomAndBabyCare`)
 }
 
 export const FetchSPMomAndBabyCarePageData = (id) =>{
-    return axios(`http://localhost:3000/MomAndBabyCare/${id}`)
+    return axios(`https://beautybebodbjson.onrender.com/MomAndBabyCare/${id}`)
 }
 
 export const FetchFragrancePageData = ( ) =>{
-    return axios('http://localhost:3000/Fragrance')
+    return axios('https://beautybebodbjson.onrender.com/Fragrance')
 }
 
 export const FetchSPFragranceData = (id) =>{
-    return axios(`http://localhost:3000/Fragrance/${id}`)
+    return axios(`https://beautybebodbjson.onrender.com/Fragrance/${id}`)
 }

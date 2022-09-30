@@ -1,24 +1,31 @@
-import { Box, Button, Flex, Image, Text, Tooltip } from "@chakra-ui/react";
-import { BsCartCheck } from "react-icons/bs";
+import { Box, Button, Divider, Flex, Image, Select, Text, Tooltip } from "@chakra-ui/react";
 import { TiTick } from "react-icons/ti";
 import ConentForSingleRenderPage from "./ContentForSingleRenderPage";
 import {MdErrorOutline} from 'react-icons/md'
 import { useContext } from "react";
 import { CartContext } from "../Context/CartContext";
 import Toast from "../Components/Toast";
+import { useState } from "react";
     
 export default function SinglePageRender ({data}){
 
     const {CartData,SetCartData} = useContext(CartContext);
     const key = Date.now( );
-   
+    const [countValue,setCountValue] = useState(0);
     const handleAddToCart = (data) =>{
         SetCartData([...CartData,data]);
     };
+
+    const handleSelect = (e ) =>{
+        const {value} = e.target;
+        setCountValue(value)
+    }
+
+
     return (
         <>
-         <Flex key={key+data.id} w={{base : '100%', md : '90%' , lg : '50%'}}  m='auto' gap='30px' direction={{base : 'column', md : 'row'}}>
-            <Box  m='auto' >
+         <Flex key={key+data.id} w={{base : '100%', md : '90%' , lg : '50%'}}  m='auto' gap='30px' direction={{base : 'column', md : 'row'}} mt='5%'>
+            <Box  m='auto'>
                 <Image w={{base : '200px', md : '300px', lg : '400px'}} src={data.image}/>
             </Box>
 
@@ -30,8 +37,8 @@ export default function SinglePageRender ({data}){
                 </Flex>
 
                 <Flex gap='10px' fontWeight='550' mt={{base : '10px', md : '15px'}}  fontSize={{base : '12px', md : '16px'}}>
-                    <Text color='gray' textDecoration='line-through'>{data.offerPrice}</Text>
-                    <Text color='#dd2985'>{data.price}</Text>
+                    <Text color='gray' textDecoration='line-through'>{data.offerPrice} </Text>
+                    <Text color='#dd2985'>{countValue === 0 ? '₹' +     data.price :  '₹' + countValue * data.price}</Text>
                     <Text color='green'>{data.off}</Text>
                 </Flex>
 
@@ -42,6 +49,12 @@ export default function SinglePageRender ({data}){
                         <Button onClick={( )=> handleAddToCart (data)} bg='#dd0285' size='sm' colorScheme='none' fontSize='20px'  className="AddToCartBtn" disabled={data.out_of_stock === 'Out of stock'}><Toast data={data}/></Button>
                     </Box>
                 </Tooltip>
+                <Select placeholder='Qty' width={'30%'} mt='20px' onChange={handleSelect} size='sm' disabled={data.out_of_stock === 'Out of stock'}>
+                    <option value='1'> 1</option>
+                    <option value='2'> 2</option>
+                    <option value='3'> 3</option>
+                    <option value='4'> 4</option>
+                </Select>
               
             </Box>
           </Flex>

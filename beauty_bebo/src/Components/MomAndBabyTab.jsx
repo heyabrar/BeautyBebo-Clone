@@ -1,19 +1,23 @@
-import { Box, Button, Image, SimpleGrid, Text, Tooltip, useToast } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, SimpleGrid, Text, Tooltip, useToast } from "@chakra-ui/react";
 import { useContext, useEffect } from "react";
 import { useState } from "react"
 import { BsCartCheck } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { CartContext } from "../Context/CartContext";
 import { FetchMomAndBabyTab } from "../FetchAPI/Fetch";
+import SpinnerLoader from "./SpinnerLoader";
 
 export default function MomAndBabyTab ( ){
 
     const [MomAndBabyData,SetMomAndBabyData] = useState([ ]);
     const {CartData,SetCartData} = useContext(CartContext);
     const Toaster = useToast( );
+    const [Loading,SetLoading] = useState(false);
     const handleMomAndBabyData = ( ) =>{
+        SetLoading(true)
         FetchMomAndBabyTab( ).then((res)=>{
            SetMomAndBabyData(res.data)
+           SetLoading(false)
         })
     }
 
@@ -36,7 +40,7 @@ export default function MomAndBabyTab ( ){
 
                      <Box className="Price_Offer_Div"> 
                       <Text fontSize={{base : '10px', md : '10px', lg : '12px'}} className='SliderDataofferPrice'>{elem.offerPrice}</Text>
-                      <Text fontSize={{base : '12px', md : '12px', lg : '16px'}} className='SliderDataPrice'>{elem.price}</Text>
+                      <Text fontSize={{base : '12px', md : '12px', lg : '16px'}} className='SliderDataPrice'>{elem.rupee+elem.price}</Text>
                       <Text fontSize={{base : '12px', md : '12px', lg : '16px'}} className='SliderDataOff'>{elem.off}</Text>
                      </Box>
 

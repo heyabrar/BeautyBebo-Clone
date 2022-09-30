@@ -44,7 +44,7 @@ export default function MostViewed ( ){
 
                             <Flex gap='10px' fontWeight='550' fontSize={{base : '12px', md : '15px'}}>
                                 <Text textDecoration='line-through' color='gray'>{elem.offerPrice}</Text>
-                                <Text color='#dd2589'>{elem.price}</Text>
+                                <Text color='#dd2589'>{elem.rupee+elem.price}</Text>
                                 <Text color='green'>{ elem.off}</Text>
                             </Flex>
 

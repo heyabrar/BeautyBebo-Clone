@@ -41,7 +41,7 @@ export default function BestSellers ( ){
                         <Box w='300px' mt='20px'>
                            <Link  to={`/BestSellers/${elem.id}`}><Text fontSize={{base : '12px', md : '15px'}} fontWeight='500' _hover={{color : '#dd2985'}}>{elem.title}</Text></Link>
                             <Flex gap='10px' fontWeight='550'>
-                                <Text color='#dd2589' fontSize={{base : '12px', md : '15px'}}>{elem.price}</Text>
+                                <Text color='#dd2589' fontSize={{base : '12px', md : '15px'}}>{elem.rupee+elem.price}</Text>
                             </Flex>
 
                             <Text fontSize={{base : '12px', md : '15px'}} fontWeight='550' color='#dd2985'>{elem.out_of_stock}</Text>
