@@ -12,12 +12,15 @@ export default function HairTab ( ){
     const [HairData,SetHairData] = useState([ ]);
     const {CartData,SetCartData} = useContext(CartContext);
     const Toaster = useToast( );
+    const [Loading,SetLoading] = useState(false);
 
     const handleHairData = ( ) =>{
+        SetLoading(true)
         FetchHairTab( ).then((res)=>{
            SetHairData(res.data)
-        })
-    }
+           SetLoading(false)
+        });
+    };
 
     useEffect(( )=>{
         handleHairData( );
@@ -26,7 +29,8 @@ export default function HairTab ( ){
     const handleAddToCart = (value) =>{
         SetCartData([...CartData,value]);
         Toaster({title : 'Added To Cart' , position : 'top-center', duration : 2000})
-    }
+    };
+
     return (
         <>
         <SimpleGrid columns={[2,2,4]}>
@@ -48,10 +52,10 @@ export default function HairTab ( ){
                          </Box>
                         </Tooltip>
                    </Box>
-                )
-            })}
+                );
+            })};
         </SimpleGrid>
 
         </>
-    )
-}
+    );
+};

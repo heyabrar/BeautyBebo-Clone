@@ -17,13 +17,12 @@ export default function SingleHairPage ( ){
       FetchSPHairPageData(Params.id).then((res)=>{
         SetLoading(false)
         SetSingleHairPageData(res.data)
-      })
-    }
+      });
+    };
 
     useEffect(( )=>{
         handleSinglePageHairData( );
     },[ ]);
-
 
     return (
         <>
@@ -33,5 +32,5 @@ export default function SingleHairPage ( ){
             </Box>
          <SinglePageRender data={SingleHairPageData}/>
         </>
-    )
-}
+    );
+};

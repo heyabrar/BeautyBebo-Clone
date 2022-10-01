@@ -4,6 +4,7 @@ import { useContext } from "react";
 import { useState } from "react"
 import { BsCartCheck } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import SpinnerLoader from "../Components/SpinnerLoader";
 import { CartContext } from "../Context/CartContext";
 import { FetchFragrancePageData } from "../FetchAPI/Fetch";
 
@@ -12,10 +13,13 @@ export default function FragrancePage ( ){
     const [FragranceData,SetFragranceData] = useState([ ]);
     const {CartData,SetCartData} = useContext(CartContext);
     const Toaster = useToast( );
+    const [Loading,SeteLoading] = useState(false);
 
     const handleFragranceData = ( ) =>{
+        SeteLoading(true)
         FetchFragrancePageData( ).then((res)=>{
             SetFragranceData(res.data)
+            SeteLoading(false)
         });
     };
 
@@ -31,6 +35,7 @@ export default function FragrancePage ( ){
     return (
         <>
          <Box h={{base : '83px', md : '125px', lg : '180px'}}></Box>
+         <Flex  justifyContent='center' position='relative' top={{base : '30px'}} >{Loading && <SpinnerLoader/>}</Flex>
          <SimpleGrid className="HairPageSimpleGrid" columns={[2,2,2,3]} w={{base : '100%', md : '90%'}} mt={{base : '5%', md :'3%'}} >
             {FragranceData.map((elem)=>{
                 return (
@@ -55,5 +60,5 @@ export default function FragrancePage ( ){
             })}
         </SimpleGrid>
         </>
-    )
-}
+    );
+};

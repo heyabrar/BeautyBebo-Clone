@@ -1,5 +1,4 @@
 import { Container, Image } from "@chakra-ui/react";
-import WelcomeToBeautyProducts from "./WelcomeToBeautyProducts";
 
 export default function FiftyPercentOffBanner ( ){
     return (
@@ -8,5 +7,5 @@ export default function FiftyPercentOffBanner ( ){
             <Image h='100%' w='100%' src="https://www.beautybebo.com/pub/media/ads/Forent_Banner_5-min.jpg"/>
         </Container>
         </>
-    )
-}
+    );
+};

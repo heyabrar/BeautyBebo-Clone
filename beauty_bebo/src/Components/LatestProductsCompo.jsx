@@ -26,10 +26,8 @@ export default function LatestProduct ( ){
     const handleAddToCart = (elem) =>{
         SetCartData([...CartData,elem]);
         Toaster({title : 'Added To Cart' , position : 'top-center', duration : 2000});
-    }
+    };
 
-
-    
     return (
         <>
         <Container  p='10px' border='1px solid RGBA(0, 0, 0, 0.16)'>
@@ -54,12 +52,9 @@ export default function LatestProduct ( ){
                             </Tooltip>
                         </Box>
                     </Flex>
-                )
-            })}
-
+                );
+            })};
         </Container>
-
         </>
-    )
-
-}
+    );
+};

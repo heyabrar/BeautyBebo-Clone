@@ -24,5 +24,5 @@ export default function SPLatestProducts ( ){
           <Box h={{base : '110px', md : '155px', lg : '220px'}}></Box>
           <SinglePageRender data={SPLatestProducts}/>
         </>
-    )
-}
+    );
+};

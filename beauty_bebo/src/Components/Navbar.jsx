@@ -1,14 +1,11 @@
 import {Box, Flex, Image, Input, Text, Tooltip} from '@chakra-ui/react'
-import {FaSearch,FaUserAlt} from 'react-icons/fa'
+import {FaSearch} from 'react-icons/fa'
 import {BsCartCheck} from 'react-icons/bs'
 import {Link} from 'react-router-dom'
 import { useContext } from 'react'
 import { CartContext } from '../Context/CartContext'
-import { useState } from 'react'
-import SkeletonCompo from './Skeleton'
 export default function Navbar ( ){
     const {TotalCartPrice,SetTotalCartPrice} = useContext(CartContext);
-    const {Loading,SetLoading} = useState(true)
     return (
         <>
         <div className='NavMainDiv'>
@@ -31,15 +28,13 @@ export default function Navbar ( ){
                 <Flex  gap={{base : '15px', md : '15px' , lg : '20px'}} alignItems={'center'} justifyContent='center'  w={{base : '18%', md : '20%' , lg : '15%'}}>
                    <Link to='/cart' > <Tooltip label='Cart'><Box  fontSize={{base : '14px', md : '16px', lg : '25px'}} _hover={{color : '#dd2985'}}><BsCartCheck/></Box></Tooltip></Link>
                     <Tooltip label='Total In Cart'>
-                    <Text fontSize={{base :'12px', md : '14px' }}>{'₹'+TotalCartPrice}</Text>
-                     </Tooltip>
-                    <Box  fontSize={{base : '14px', md : '16px', lg : '25px'}} _hover={{color : '#dd2985', cursor : 'pointer'}}><FaUserAlt/></Box>
-                        
+                    <Text  fontSize={{base :'12px', md : '14px' }} fontWeight='550'>{'₹'+TotalCartPrice}</Text>
+                     </Tooltip>  
                 </Flex>
             </Flex>
         </Box>
 
-            <Box w='100%' className='BottomNavContainer' fontSize={{base : '10px', md : '16px'}}>
+            <Box w='100%' className='BottomNavContainer' fontSize={{base : '12px', md : '16px'}}>
             <Link to='/'>MAKE UP</Link>
             <Link to='/hair'>HAIR</Link>
             <Link to='/mombabycare'>MOM & BABY CARE</Link>
@@ -47,5 +42,5 @@ export default function Navbar ( ){
             </Box>
         </div>
         </>
-    )
-}
+    );
+};

@@ -55,9 +55,9 @@ export default function MomAndBabyCarePage ( ){
                                 </Box>
                             </Tooltip>
                      </Box>
-                )
-            })}
+                );
+            })};
         </SimpleGrid>
         </>
-    )
-}
+    );
+};
