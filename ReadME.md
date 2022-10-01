@@ -28,7 +28,13 @@ Beauty Bebo is India’s fastest growing online retail store for the day to day 
 
 A Solo project buit by me, executed in 4 Days.
 
-
+## Tech Stack
+- **React**
+- **Chakra UI**
+- **React Router DOM**
+- **JavaScript**
+- **React Icons**
+- **axios**
 
 
 
