@@ -6,7 +6,6 @@ import { BsCartCheck } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import { FetchHairPageData } from '../FetchAPI/Fetch';
 import {CartContext} from '../Context/CartContext'
-import SkeletonCompo from '../Components/Skeleton';
 import SpinnerLoader from '../Components/SpinnerLoader';
 
 export default function HairPage ( ){
@@ -34,7 +33,7 @@ export default function HairPage ( ){
     return (
         <>
          <Box h={{base : '83px', md : '125px', lg : '180px'}}></Box>
-         <Flex  justifyContent='center' position='relative' mt={{base : '10%', md : '3%'}}>{Loading && <SpinnerLoader/>}</Flex>
+         <Flex  justifyContent='center' position='relative' top={{base : '30px'}} >{Loading && <SpinnerLoader/>}</Flex>
          <SimpleGrid className="HairPageSimpleGrid" columns={[2,2,2,3]} w={{base : '100%', md : '90%'}} mt={{base : '5%', md :'4%'}} >
             {HairData.map((elem)=>{
                 return (
@@ -55,9 +54,9 @@ export default function HairPage ( ){
                                 </Box>
                             </Tooltip>
                      </Box>
-                )
-            })}
+                );
+            })};
         </SimpleGrid>
         </>
-    )
-}
+    );
+};

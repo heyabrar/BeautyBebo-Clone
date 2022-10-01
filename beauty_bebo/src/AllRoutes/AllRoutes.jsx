@@ -15,6 +15,9 @@ import SPMomAndBabyCareTab from "../Components/SinglePageMomAndBabyTab";
 import SingleMBCPage from "../Components/SingleMBCPage";
 import SingleFragrancePage from "../Components/SingleFragrancePage";
 import CartPage from "../Pages/CartPage";
+import CheckoutPage from "../Pages/CheckoutPage";
+import PaymentPage from "../Pages/PaymentPage";
+import NotFoundPage from "../Pages/NotFoundPage";
 
 export default function AllRoutes ( ) {
     return (
@@ -25,6 +28,9 @@ export default function AllRoutes ( ) {
             <Route path="/mombabycare" element={<MomAndBabyCarePage/>}/>
             <Route path="/fragrance" element={<FragrancePage/>}/>
             <Route path="/cart" element={<CartPage/>}/>
+            <Route path="/checkout" element={<CheckoutPage/>}/>
+            <Route path="/payment" element={<PaymentPage/>}/>
+            <Route path="*" element={<NotFoundPage/>}/>
             <Route path="/homeSliderData1/:id" element={<SinglePageDisplaySlider/>}/>
             <Route path="/MakeUpTab/:id" element={<SinglePageMakeUp/>}/>
             <Route path="/HairTab/:id" element={<SPHairTab/>}/>

@@ -9,12 +9,11 @@ export default function SPBestSellers ( ){
     const [SPBestSellers,SetSPBestSellers] = useState({ })
     const Params = useParams( );
 
-
     const handleSPBestSellersData = ( ) =>{
             FetchSinglePageBestSellers(Params.id).then((res)=>{
                SetSPBestSellers(res.data)
-            })
-    }
+            });
+    };
 
     useEffect(( )=>{
         handleSPBestSellersData( );

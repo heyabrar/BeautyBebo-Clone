@@ -24,12 +24,12 @@ export default function SinglePageRender ({data}){
 
     return (
         <>
-         <Flex key={key+data.id} w={{base : '100%', md : '90%' , lg : '50%'}}  m='auto' gap='30px' direction={{base : 'column', md : 'row'}} mt='5%'>
-            <Box  m='auto'>
-                <Image w={{base : '200px', md : '300px', lg : '400px'}} src={data.image}/>
+         <Flex key={key+data.id} w={{base : '100%', md : '90%' , lg : '50%'}}  m='auto' direction={{base : 'column', md : 'row'}} mt='5%'>
+            <Box  m='auto' w={{base : '70%', md : '50%'}} >
+                <Image m='auto' w={{base : '200px', md : '300px', lg : '400px'}} src={data.image}/>
             </Box>
 
-            <Box  m='auto'  w='80%'>
+            <Box  m='auto'  w={{base : '70%', md : '50%'}}  padding='10px'>
                 <Text fontSize={{base : '14px', md : '16px', lg : '18px'}} w={'90%'} fontWeight='550'>{data.title}</Text>
                <Flex color='#dd2985' gap='7px' mt={{base : '10px', md : '15px'}} fontSize={{base : '12px', md : '16px'}} alignItems='center'>
                     { data.stock ? <TiTick/> : <MdErrorOutline/> }

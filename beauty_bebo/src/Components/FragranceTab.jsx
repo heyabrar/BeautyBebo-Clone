@@ -16,17 +16,18 @@ export default function FragranceTab ( ){
     const handleFragranceData = ( ) =>{
         FetchFragranceTab( ).then((res)=>{
            SetFragranceData(res.data)
-        })
-    }
+        });
+    };
 
     useEffect(( )=>{
         handleFragranceData( );
     },[ ]);
 
     const handleAddToCart = (elem) =>{
-        SetCartData([...CartData,elem])
-        Toaster({title : 'Added To Cart' , position : 'top-center', duration : 2000})
-    }
+        SetCartData([...CartData,elem]);
+        Toaster({title : 'Added To Cart' , position : 'top-center', duration : 2000});
+    };
+
     return (
         <>
         <SimpleGrid columns={[2,2,4]}>
@@ -49,9 +50,8 @@ export default function FragranceTab ( ){
                         </Tooltip>
                    </Box>
                 )
-            })}
+            })};
         </SimpleGrid>
-
         </>
-    )
-}
+    );
+};

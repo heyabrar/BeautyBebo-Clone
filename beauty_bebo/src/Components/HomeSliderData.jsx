@@ -1,25 +1,23 @@
-import { Box, Image, Text, Grid, Button, Tooltip, useToast, Spinner} from "@chakra-ui/react";
+import { Box, Image, Text, Grid, Button, Tooltip, useToast} from "@chakra-ui/react";
 import { useContext, useEffect } from "react";
 import { useState } from "react"
 import { FetchHomeSlideData } from "../FetchAPI/Fetch";
-import {Link, useParams, useSearchParams} from 'react-router-dom'
+import {Link, useSearchParams} from 'react-router-dom'
 import Pagination from "./Pagination";
 import { BsCartCheck } from "react-icons/bs";
 import { CartContext } from "../Context/CartContext";
-import Skeleton from "./Skeleton";
-import SkeletonCompo from "./Skeleton";
 import SpinnerLoader from "./SpinnerLoader";
 
 const getCurrentPage = (value)=>{
     value = Number(value)
     if(value === 'number' && value <= 0) {
         value = 1;
-    }
+    };
     if(!value){
         value = 1;
-    }
+    };
     return value;
-}
+};
 
 export default function HomeSliderData ( ) {
     const [sliderData,setSliderData] = useState([ ]);
@@ -29,19 +27,19 @@ export default function HomeSliderData ( ) {
     const [totalPage,setTotalPage] = useState(0);
     const {CartData,SetCartData} = useContext(CartContext);
     const [Loading,SetLoading] = useState(false);
-    const Toaster = useToast()
+    const Toaster = useToast( );
 
     const handleHomeSliderData = ( ) =>{
-        SetLoading(true)
+        SetLoading(true);
       FetchHomeSlideData(page,setTotalPage).then((res)=>{
-        setSliderData(res)
-        SetLoading(false)
+        setSliderData(res);
+        SetLoading(false);
       })
     }
 
     useEffect(( )=>{
         handleHomeSliderData( );
-    },[page])
+    },[page]);
 
     useEffect(( )=>{
         setSearchParams({page})
@@ -50,10 +48,10 @@ export default function HomeSliderData ( ) {
     const handleAddToCart = (elem) =>{
         SetCartData([...CartData,elem]);
         Toaster({title : 'Added To Cart' , position : 'top-center', duration : 2000})
-    }
+    };
+
     return (
         <>
-        {/* <SkeletonCompo/>  */}
             <Box  width='30%' m='auto' display='flex' justifyContent={'center'} position='relative' top={{base : '280px', md : '200px', lg : '250px'}}>
               {Loading && <SpinnerLoader/>}
             </Box>
@@ -76,10 +74,10 @@ export default function HomeSliderData ( ) {
                                 </Box>
                             </Tooltip>
                             </Box>
-                    )
-                })}
+                    );
+                })};
             </Grid>
             <Pagination current = {page} onChange={(page)=> setPage(page)} totalPage={totalPage}/>
         </>
-    )
-}
+    );
+};

@@ -17,8 +17,8 @@ export default function SingleMBCPage ( ){
         FetchSPMomAndBabyCarePageData(Params.id).then((res)=>{
             SetSPMBCData(res.data)
             SetLoading(false)
-        })
-    }
+        });
+    };
 
     useEffect(( )=>{
         handleSPMBC( );
@@ -26,11 +26,11 @@ export default function SingleMBCPage ( ){
     
     return (
         <>
-        <Box h={{base : '115px', md : '145px', lg : '200px'}}></Box>
-        <Box  width='30%' m='auto' display='flex' justifyContent={'center'} position='relative' top={{base : '100px', md : '70px', lg : '150px'}}>
-              {Loading && <SpinnerLoader/>}
-            </Box>
-         <SinglePageRender data={SPMBCData}/>
+            <Box h={{base : '115px', md : '145px', lg : '200px'}}></Box>
+                 <Box  width='30%' m='auto' display='flex' justifyContent={'center'} position='relative' top={{base : '100px', md : '70px', lg : '150px'}}>
+                    {Loading && <SpinnerLoader/>}
+                </Box>
+            <SinglePageRender data={SPMBCData}/>
         </>
-    )
-}
+    );
+};

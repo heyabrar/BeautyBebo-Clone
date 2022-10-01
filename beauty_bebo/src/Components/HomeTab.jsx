@@ -36,23 +36,23 @@ export default function HomeTabs ( ){
                        <Text fontSize={{base : '10px', md : '14px', lg : '16px'}}>Fragrance</Text>
                     </Box>
                 </Tab>
-            </TabList>
+                </TabList>
 
-        <TabPanels>
-            <TabPanel>
-                <MakeUpTab/>
-            </TabPanel>
-            <TabPanel>
-                <HairTab/>
-            </TabPanel>
-            <TabPanel>
-               <MomAndBabyTab/>
-            </TabPanel>
-            <TabPanel>
-                <FragranceTab/>
-            </TabPanel>
-        </TabPanels>
-</Tabs>
+                <TabPanels>
+                    <TabPanel>
+                        <MakeUpTab/>
+                    </TabPanel>
+                    <TabPanel>
+                        <HairTab/>
+                    </TabPanel>
+                    <TabPanel>
+                    <MomAndBabyTab/>
+                    </TabPanel>
+                    <TabPanel>
+                        <FragranceTab/>
+                    </TabPanel>
+                </TabPanels>
+         </Tabs>
         </>
     )
 }
