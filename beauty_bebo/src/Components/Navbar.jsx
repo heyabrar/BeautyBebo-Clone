@@ -26,7 +26,7 @@ export default function Navbar ( ){
                 </Box>
 
                 <Flex  gap={{base : '15px', md : '15px' , lg : '20px'}} alignItems={'center'} justifyContent='center'  w={{base : '18%', md : '20%' , lg : '15%'}}>
-                   <Link to='/cart' > <Tooltip label={CartData.length === 0 ? 'Cart Is Empty' : 'Cart'}><Button variant='unstyled' size='xsm' disabled={CartData.length === 0}  fontSize={{base : '14px', md : '16px', lg : '25px'}} _hover={{color : '#dd2985'}}><BsCartCheck/></Button></Tooltip></Link>
+                   <Link to={CartData.length === 0 ? '/' : '/cart'}> <Tooltip label={CartData.length === 0 ? 'Cart Is Empty' : 'Cart'}><Button variant='unstyled' size='xsm' disabled={CartData.length === 0}  fontSize={{base : '14px', md : '16px', lg : '25px'}} _hover={{color : '#dd2985'}}><BsCartCheck/></Button></Tooltip></Link>
                     <Tooltip label={CartData.length === 0 ? 'Cart Is Empty' : 'Total In Cart'}>
                     <Text  fontSize={{base :'12px', md : '14px' }} fontWeight='550'>{'₹'+TotalCartPrice}</Text>
                      </Tooltip>  
