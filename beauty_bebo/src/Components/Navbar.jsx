@@ -1,11 +1,11 @@
-import {Box, Flex, Image, Input, Text, Tooltip} from '@chakra-ui/react'
+import {Box, Button, Flex, Image, Input, Text, Tooltip} from '@chakra-ui/react'
 import {FaSearch} from 'react-icons/fa'
 import {BsCartCheck} from 'react-icons/bs'
 import {Link} from 'react-router-dom'
 import { useContext } from 'react'
 import { CartContext } from '../Context/CartContext'
 export default function Navbar ( ){
-    const {TotalCartPrice,SetTotalCartPrice} = useContext(CartContext);
+    const {TotalCartPrice,SetTotalCartPrice,CartData} = useContext(CartContext);
     return (
         <>
         <div className='NavMainDiv'>
@@ -26,8 +26,8 @@ export default function Navbar ( ){
                 </Box>
 
                 <Flex  gap={{base : '15px', md : '15px' , lg : '20px'}} alignItems={'center'} justifyContent='center'  w={{base : '18%', md : '20%' , lg : '15%'}}>
-                   <Link to='/cart' > <Tooltip label='Cart'><Box  fontSize={{base : '14px', md : '16px', lg : '25px'}} _hover={{color : '#dd2985'}}><BsCartCheck/></Box></Tooltip></Link>
-                    <Tooltip label='Total In Cart'>
+                   <Link to='/cart' > <Tooltip label={CartData.length === 0 ? 'Cart Is Empty' : 'Cart'}><Button variant='unstyled' size='xsm' disabled={CartData.length === 0}  fontSize={{base : '14px', md : '16px', lg : '25px'}} _hover={{color : '#dd2985'}}><BsCartCheck/></Button></Tooltip></Link>
+                    <Tooltip label={CartData.length === 0 ? 'Cart Is Empty' : 'Total In Cart'}>
                     <Text  fontSize={{base :'12px', md : '14px' }} fontWeight='550'>{'₹'+TotalCartPrice}</Text>
                      </Tooltip>  
                 </Flex>
