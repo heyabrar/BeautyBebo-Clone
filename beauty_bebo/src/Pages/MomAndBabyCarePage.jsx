@@ -39,7 +39,7 @@ export default function MomAndBabyCarePage ( ){
                 return (
                     <Box key={elem.id} className="HairPageSimpleGridBox" w={{base : '95%', md : '90%'}}   shadow='sm'>
                        <Link to={`/MomAndBabyCare/${elem.id}`}><Image w={{base : '150px', md :'150px', lg : '200px'}} m='auto'  src={elem.image}/></Link>
-                       <Link to={`/MomAndBabyCare/${elem.id}`}><Text  h={{base : '50px', md : '50px', lg : '40px'}} w={{base : '100%', md : '90%', lg : '80%'}} m='auto' fontSize={{base : '12px', md : '14px'}} color='RGBA(0, 0, 0, 0.48)'>{elem.title}</Text></Link>
+                       <Link to={`/MomAndBabyCare/${elem.id}`}><Text  h={{base : '70px', md : '50px', lg : '40px'}} w={{base : '100%', md : '90%', lg : '80%'}} m='auto' fontSize={{base : '12px', md : '14px'}} color='RGBA(0, 0, 0, 0.48)'>{elem.title}</Text></Link>
                        <Text  fontSize={{base : '10px' , md :'12px'}} h='15px' color='#dd2985'>{elem.out_of_stock || elem.stock}</Text>
 
                         <Flex gap='10px' fontSize={{base : '12px',md : '14px'}} mt='10px' justifyContent='center'>
@@ -60,4 +60,4 @@ export default function MomAndBabyCarePage ( ){
         </SimpleGrid>
         </>
     );
-};
+}

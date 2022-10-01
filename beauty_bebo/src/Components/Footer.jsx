@@ -4,7 +4,7 @@ import {BsFacebook,BsInstagram} from 'react-icons/bs'
 export default function Footer ( ) {
     return (
         <>
-        <Box className="FooterMainBox" border='3px solid #dd0285' mt='1%'>
+        <Box className="FooterMainBox" border={{base : '1px solid #dd0285', md : '3px solid #dd0285'}} mt='1%'>
         <SimpleGrid className="FooterSimpleGrid" columns={[2,2,4]} w={{base : '90%', md : '85%'}} rowGap='40px' mt='20px'>
             <Box>
                 <Text>CONTACT INFO</Text>
