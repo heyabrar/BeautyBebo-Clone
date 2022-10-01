@@ -22,6 +22,9 @@ Beauty Bebo is India’s fastest growing online retail store for the day to day 
 
 ## Features 
 - **Landing Page**
+- **Products Page**
+- **Cart Page**
+- **Checkout and Payment Page**
 
 
 
