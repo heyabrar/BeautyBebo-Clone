@@ -5,6 +5,8 @@ This is the clone of [BeautyBebo.com](https://www.beautybebo.com/), Which i was 
 # BeautyBebo.com
 Beauty Bebo is India’s fastest growing online retail store for the day to day and special occasion need of the Makeup, Skin care, Hair care, Personal care, Mom and Baby care, Fragrance and Ayurveda products. We at Beauty Bebo are committed to provide genuine products on fair price to our customers. We bring worlds premium brands and products for you on a single platform. You need not to roam around the stores to get your most favorite mascara, eyeliner, lipstick or any other product. You have got the wish pari (Beauty Bebo) on your fingure tips. Just imagine your most favorite product and instruct your finger tips to order it on Beautybebo.com, soon it will be delivered to your doorstep.
 
+## Live Deployed URL : https://beauty-bebo-heyabrar.vercel.app/
+
 ## Landing Page
 
 ![image](https://user-images.githubusercontent.com/103938174/193416457-fb00e35e-9fee-4e6e-95c3-895ab2290f04.png)
@@ -16,6 +18,8 @@ Beauty Bebo is India’s fastest growing online retail store for the day to day 
 
 ## Payments Page 
 ![image](https://user-images.githubusercontent.com/103938174/193416627-3992cdd2-63b5-4023-a8a5-6a4bfca6b151.png)
+
+
 
 
 
