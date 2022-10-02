@@ -50,8 +50,8 @@ export default function MomAndBabyTab ( ){
                             </Box>
                         </Tooltip>
                     </Box>
-                    );
-                })};
+                    )
+                })}
             </SimpleGrid>
         </>
     );

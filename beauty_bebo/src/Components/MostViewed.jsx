@@ -56,7 +56,7 @@ export default function MostViewed ( ){
                             </Box>
                         </Flex>
                     )
-                })};
+                })}
             </Container>
         </>
     );

@@ -54,8 +54,8 @@ export default function BestSellers ( ){
 
                         </Box> 
                     </Flex>
-                );
-            })};
+                )
+            })}
         </Container>
         </>
     );

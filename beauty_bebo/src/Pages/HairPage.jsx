@@ -54,8 +54,8 @@ export default function HairPage ( ){
                                 </Box>
                             </Tooltip>
                      </Box>
-                );
-            })};
+                )
+            })}
         </SimpleGrid>
         </>
     );

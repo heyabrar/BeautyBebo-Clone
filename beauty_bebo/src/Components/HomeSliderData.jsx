@@ -74,10 +74,10 @@ export default function HomeSliderData ( ) {
                                 </Box>
                             </Tooltip>
                             </Box>
-                    );
-                })};
+                    )
+                })}
             </Grid>
             <Pagination current = {page} onChange={(page)=> setPage(page)} totalPage={totalPage}/>
         </>
-    );
-};
+    )
+}

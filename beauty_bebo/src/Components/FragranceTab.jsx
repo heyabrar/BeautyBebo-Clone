@@ -50,7 +50,7 @@ export default function FragranceTab ( ){
                         </Tooltip>
                    </Box>
                 )
-            })};
+            })}
         </SimpleGrid>
         </>
     );
