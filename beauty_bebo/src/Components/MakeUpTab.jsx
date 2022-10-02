@@ -54,8 +54,8 @@ export default function MakeUpTab ( ){
                                 </Box>
                                 </Tooltip>
                         </Box>
-                        );
-                    })};
+                        )
+                    })}
                 </SimpleGrid>
         </>
     );

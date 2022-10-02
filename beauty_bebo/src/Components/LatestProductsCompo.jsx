@@ -52,8 +52,8 @@ export default function LatestProduct ( ){
                             </Tooltip>
                         </Box>
                     </Flex>
-                );
-            })};
+                )
+            })}
         </Container>
         </>
     );

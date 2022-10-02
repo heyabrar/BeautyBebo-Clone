@@ -52,8 +52,8 @@ export default function HairTab ( ){
                          </Box>
                         </Tooltip>
                    </Box>
-                );
-            })};
+                )
+            })}
         </SimpleGrid>
 
         </>
