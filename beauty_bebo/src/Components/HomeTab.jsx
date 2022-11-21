@@ -11,28 +11,28 @@ export default function HomeTabs ( ){
             <TabList className="HomeTablist">
                 <Tab w={'25%'} >
                     <Box>
-                       <Image m='auto' boxSize={{base : '30px', md :'40px'}} color='white' src="https://www.beautybebo.com/pub/media/catalog/category/makeup_1.png"/>
+                       <Image m='auto' boxSize={{base : '30px', md :'40px'}} color='white' src="https://www.beautybebo.com/media/catalog/category/makeup_1.png"/>
                        <Text fontSize={{base : '10px', md : '14px', lg : '16px'}}>Make Up</Text>
                     </Box>
                 </Tab>
 
                 <Tab w={'25%'} >
                    <Box>
-                       <Image m='auto' boxSize={{base : '30px', md :'40px'}} src="https://www.beautybebo.com/pub/media/catalog/category/hair.png"/>
+                       <Image m='auto' boxSize={{base : '30px', md :'40px'}} src="https://www.beautybebo.com/media/catalog/category/hair.png"/>
                        <Text fontSize={{base : '10px', md : '14px', lg : '16px'}}>Hair</Text>
                     </Box>
                 </Tab>
 
                 <Tab w={'25%'}>
                      <Box>
-                       <Image m='auto' boxSize={{base : '30px', md :'40px'}} src="https://www.beautybebo.com/pub/media/catalog/category/mom-baby-care.png"/>
+                       <Image m='auto' boxSize={{base : '30px', md :'40px'}} src="https://www.beautybebo.com/media/catalog/category/mom-baby-care.png"/>
                        <Text fontSize={{base : '10px', md : '14px', lg : '16px'}}>Mom & Baby Care</Text>
                     </Box>
                 </Tab>
 
                 <Tab w={'25%'}>
                     <Box>
-                       <Image m='auto' boxSize={{base : '30px', md :'40px'}} src="https://www.beautybebo.com/pub/media/catalog/category/fragrance_3.png"/>
+                       <Image m='auto' boxSize={{base : '30px', md :'40px'}} src="https://www.beautybebo.com/media/catalog/category/fragrance_3.png"/>
                        <Text fontSize={{base : '10px', md : '14px', lg : '16px'}}>Fragrance</Text>
                     </Box>
                 </Tab>

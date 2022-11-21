@@ -2,10 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import {Container, Image} from '@chakra-ui/react'
 import { Link } from "react-router-dom";
 const colors = [
-{img : "https://www.beautybebo.com/pub/media/ads/home-slider/Slider_banner_1-min.jpg", id :1, Link : '/hair'}, 
-{img : "https://www.beautybebo.com/pub/media/ads/home-slider/Ponds_Forent_Banner_6-min.jpg", id : 2, Link : '/'}, 
-{img : "https://www.beautybebo.com/pub/media/ads/home-slider/Mamaearth_banner_1-min.jpg", id : 3, Link : '/mombabycare' },
-];
+{img : "https://www.beautybebo.com/media/ads/home-slider/Slider_banner_1-min.jpg", id :1, Link : '/hair'}, 
+{img : "https://www.beautybebo.com/media/ads/home-slider/Ponds_Forent_Banner_6-min.jpg", id : 2, Link : '/'}, 
+{img : "https://www.beautybebo.com/media/ads/home-slider/Mamaearth_banner_1-min.jpg", id : 3, Link : '/mombabycare' },
+]
 const delay = 2500;
 
 export default function Slideshow() {
