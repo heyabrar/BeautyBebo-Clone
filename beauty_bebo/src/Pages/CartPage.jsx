@@ -8,7 +8,6 @@ import { CartContext } from "../Context/CartContext";
 export default function CartPage ( ) {
     const {CartData,SetCartData,TotalCartPrice,SetTotalCartPrice} = useContext(CartContext);
     const key = Date.now( )+Math.random(1*1000);
-    console.log(key)
     const [Loading,SetLoading] = useState(false)
 
     const handleRemove = (id) =>{

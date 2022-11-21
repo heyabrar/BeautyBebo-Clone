@@ -10,13 +10,13 @@ export default function Navbar ( ){
         <>
         <div className='NavMainDiv'>
         <Box maxW='100%'  className='TopNav'>
-            <Link to={'/fragrance'}><Image boxSize='100%' m='auto' src='https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg'/></Link>
+            <Link to={'/fragrance'}><Image boxSize='100%' m='auto' src='https://www.beautybebo.com/media/ads/ad-desktop.jpg'/></Link>
         </Box>
 
         <Box bg='white'>
             <Flex className='MiddleNavFlex' w={{base : '100%', md : '90%', lg : '90%'}} p='10px' bg='white'> 
            <Box  w={{base : '20%', md : '20%', lg : '20%'}}>
-                <Link to='/'><Image w={{base : '100%', md : '90%' , lg : '90%'}}  src='https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png'/></Link>
+                <Link to='/'><Image w={{base : '100%', md : '90%' , lg : '90%'}}  src='https://www.beautybebo.com/media/logo/default/beautybebo_1.png'/></Link>
             </Box>
           
 
